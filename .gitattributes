@@ -1,0 +1,24 @@
+# Windows betikleri, çözüm dosyaları ve Inno Setup betiği CRLF ile saklanır.
+*.ps1   text eol=crlf
+*.psm1  text eol=crlf
+*.cmd   text eol=crlf
+*.bat   text eol=crlf
+*.sln   text eol=crlf
+*.iss   text eol=crlf
+*.csproj text eol=crlf
+
+# Kaynak ve belgeler LF.
+*.cs    text eol=lf
+*.js    text eol=lf
+*.css   text eol=lf
+*.html  text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.yar   text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# İkili dosyalar — dönüştürme yok.
+*.png   binary
+*.ico   binary
+*.exe   binary

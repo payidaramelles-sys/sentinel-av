@@ -1,0 +1,43 @@
+# ==== Derleme çıktıları ====
+bin/
+obj/
+dist/
+publish/
+artifacts/
+*.user
+.vs/
+.vscode/
+.idea/
+
+# ==== Kurulum paketi ====
+installer/payload/
+installer/output/
+installer/_test.iss
+Sentinel-Setup-*.exe
+
+# ==== Çalışma zamanı verisi (asla commit edilmez) ====
+sentinel-local/
+sentinel.json
+*.db
+*.db-wal
+*.db-shm
+*.log
+data/
+Report*.html
+report*.html
+
+# ==== Test / kapsam çıktıları ====
+TestResults/
+coverage/
+*.trx
+
+# ==== Geçici ====
+tmp/
+temp/
+*.tmp
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ==== Araçlar ====
+.opencode/

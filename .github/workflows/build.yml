@@ -1,0 +1,42 @@
+name: build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: .NET SDK 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Bağımlılıkları geri yükle
+        run: dotnet restore Sentinel.sln
+
+      - name: Derle (Release)
+        run: dotnet build Sentinel.sln -c Release --no-restore
+
+      - name: Selftest (EICAR + karantina + pipeline)
+        run: |
+          $cli = "src\Sentinel.Cli\bin\Release\net8.0\Sentinel.Cli.exe"
+          & $cli init
+          & $cli selftest
+          if ($LASTEXITCODE -ne 0) { throw "selftest basarisiz: $LASTEXITCODE" }
+
+      - name: Derleme çıktısını sakla
+        uses: actions/upload-artifact@v4
+        with:
+          name: sentinel-binaries
+          path: |
+            src/Sentinel.Cli/bin/Release/net8.0/
+            src/Sentinel.Tray/bin/Release/net8.0-windows/
+          retention-days: 7

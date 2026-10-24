@@ -1,0 +1,54 @@
+Sentinel — hafif Windows antivirüsü
+===================================
+
+Bu arşiv projenin tamamını içerir (derleme çıktıları ve geçici dosyalar hariç).
+
+HIZLI BAŞLANGIÇ
+--------------
+1) Kurmak için:  Sentinel-Setup-1.0.0.exe  (yönetici ister, x64, Windows 10 1809+)
+   - Kurulum: C:\Program Files\Sentinel
+   - Veri:    C:\ProgramData\Sentinel   (config, günlük, karantina, rapor, kurallar)
+   - Kaldırma: C:\Program Files\Sentinel\unins000.exe  (veya Ayarlar > Uygulamalar)
+
+2) Kaynaktan derlemek için (.NET 8 SDK gerekir):
+   dotnet build Sentinel.sln -c Release
+   dotnet run --project src\Sentinel.Cli -- init
+   dotnet run --project src\Sentinel.Cli -- selftest
+
+3) Kurulum paketini yeniden üretmek için (Inno Setup 6 gerekir):
+   powershell -ExecutionPolicy Bypass -File installer\build.ps1
+
+KLASÖRLER
+---------
+src\Sentinel.Core      modeller, config, SQLite günlük, karantina (AES-256-GCM), yol yönetimi
+src\Sentinel.Engines   tarama motorları: yerleşik sezgiler, Defender CLI, YARA-X, ClamAV,
+                       AppLocker güven listesi, tarama hattı
+src\Sentinel.Watch     indirme izleyici, davranış izleyici, HTML rapor, zamanlayıcı
+src\Sentinel.Cli       komut satırı: scan / watch / trust / quarantine / report / service
+src\Sentinel.Service   Windows servisi (arka plan izleme + haftalık tarama)
+src\Sentinel.Tray      WebView2 arayüzü + tepsi ikonu (ui\index.html, styles.css, app.js)
+rules\yara             başlangıç YARA kuralları
+scripts\               Defender evcilleştirme, engel teşhisi, AppLocker güven betiği
+installer\             Inno Setup betiği + ikon + paketleme betiği
+docs\                  ekran görüntüleri
+
+KOMUTLAR
+--------
+sentinel status
+sentinel scan "C:\bir\klasor" --deep
+sentinel trust status | list | add <yol> | remove <id> | mode off|audit|enforce
+sentinel quarantine list | restore <id> | delete <id>
+sentinel report
+sentinel quiet
+sentinel selftest
+
+NOTLAR
+------
+- Varsayılan yanıt modu "izle" (dryRun): hiçbir şeyi silmez, sadece günlüğe yazar.
+- Dosyanın çalışmasını engellemez; tespit -> karantina -> bildirim yapar.
+  (Gerçek önleme için kernel minifilter sürücüsü ve EV imzası gerekir.)
+- Defender'ın yerini almaz, onun yanında ikinci göz olarak çalışır.
+- ClamAV varsayılan olarak kapalıdır (yüksek RAM). Etkinleştirmek için README'deki bölüme bak.
+- AppLocker "zorunlu" modu önce "denetim" modunda test edilmelidir.
+
+Lisans notu: ClamAV GPLv2 (ayrı süreç olarak kullanılıyor), YARA-X BSD-3.

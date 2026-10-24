@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0CCF6591-311E-4214-A23F-08E5D96075C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentinel.Core", "src\Sentinel.Core\Sentinel.Core.csproj", "{C99D5549-D680-425D-A5D0-6DBA888E40C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentinel.Engines", "src\Sentinel.Engines\Sentinel.Engines.csproj", "{20B5EA2E-A445-4E56-88CD-2E62A059C225}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentinel.Watch", "src\Sentinel.Watch\Sentinel.Watch.csproj", "{6214A93A-6FA0-42B9-B66D-165811CB7913}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentinel.Cli", "src\Sentinel.Cli\Sentinel.Cli.csproj", "{1DD44500-5F83-43F8-8F74-B230A3570200}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentinel.Service", "src\Sentinel.Service\Sentinel.Service.csproj", "{0B852E61-DF68-4B32-B1DA-BDC2406DA907}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentinel.Tray", "src\Sentinel.Tray\Sentinel.Tray.csproj", "{101ED809-2037-48DE-B773-01AF91056C09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C99D5549-D680-425D-A5D0-6DBA888E40C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C99D5549-D680-425D-A5D0-6DBA888E40C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C99D5549-D680-425D-A5D0-6DBA888E40C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C99D5549-D680-425D-A5D0-6DBA888E40C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20B5EA2E-A445-4E56-88CD-2E62A059C225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20B5EA2E-A445-4E56-88CD-2E62A059C225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20B5EA2E-A445-4E56-88CD-2E62A059C225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20B5EA2E-A445-4E56-88CD-2E62A059C225}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6214A93A-6FA0-42B9-B66D-165811CB7913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6214A93A-6FA0-42B9-B66D-165811CB7913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6214A93A-6FA0-42B9-B66D-165811CB7913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6214A93A-6FA0-42B9-B66D-165811CB7913}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DD44500-5F83-43F8-8F74-B230A3570200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD44500-5F83-43F8-8F74-B230A3570200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DD44500-5F83-43F8-8F74-B230A3570200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DD44500-5F83-43F8-8F74-B230A3570200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B852E61-DF68-4B32-B1DA-BDC2406DA907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B852E61-DF68-4B32-B1DA-BDC2406DA907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B852E61-DF68-4B32-B1DA-BDC2406DA907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B852E61-DF68-4B32-B1DA-BDC2406DA907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{101ED809-2037-48DE-B773-01AF91056C09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{101ED809-2037-48DE-B773-01AF91056C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{101ED809-2037-48DE-B773-01AF91056C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{101ED809-2037-48DE-B773-01AF91056C09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C99D5549-D680-425D-A5D0-6DBA888E40C1} = {0CCF6591-311E-4214-A23F-08E5D96075C5}
+		{20B5EA2E-A445-4E56-88CD-2E62A059C225} = {0CCF6591-311E-4214-A23F-08E5D96075C5}
+		{6214A93A-6FA0-42B9-B66D-165811CB7913} = {0CCF6591-311E-4214-A23F-08E5D96075C5}
+		{1DD44500-5F83-43F8-8F74-B230A3570200} = {0CCF6591-311E-4214-A23F-08E5D96075C5}
+		{0B852E61-DF68-4B32-B1DA-BDC2406DA907} = {0CCF6591-311E-4214-A23F-08E5D96075C5}
+		{101ED809-2037-48DE-B773-01AF91056C09} = {0CCF6591-311E-4214-A23F-08E5D96075C5}
+	EndGlobalSection
+EndGlobal

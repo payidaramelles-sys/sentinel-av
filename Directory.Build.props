@@ -1,0 +1,7 @@
+<Project>
+  <PropertyGroup>
+    <NoWarn>$(NoWarn);CA1416</NoWarn>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+</Project>
