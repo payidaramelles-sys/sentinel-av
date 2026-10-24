@@ -3,7 +3,7 @@
 [![Lisans: MIT](https://img.shields.io/badge/Lisans-MIT-yellow.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-blue.svg)](#kurulum)
 [![.NET](https://img.shields.io/badge/.NET-8.0-512BD4.svg)](https://dotnet.microsoft.com/download)
-[![build](https://github.com/KULLANICI_ADIN/sentinel/actions/workflows/build.yml/badge.svg)](https://github.com/KULLANICI_ADIN/sentinel/actions/workflows/build.yml)
+[![Durum](https://img.shields.io/badge/durum-v1.0.0-brightgreen.svg)](../../releases)
 
 **[⬇ Son sürümü indir](../../releases/latest)** · İmzasız olduğu için SmartScreen uyarabilir — README'deki
 [Smart App Control](#3-kurulum-paketi-setup-exe) bölümüne bakın.
