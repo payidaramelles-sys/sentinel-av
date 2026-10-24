@@ -1,4 +1,4 @@
-﻿# Sentinel
+# Sentinel
 
 [![Lisans: MIT](https://img.shields.io/badge/Lisans-MIT-yellow.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-blue.svg)](#kurulum)
