@@ -3,9 +3,10 @@
 [![Lisans: MIT](https://img.shields.io/badge/Lisans-MIT-yellow.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-blue.svg)](#kurulum)
 [![.NET](https://img.shields.io/badge/.NET-8.0-512BD4.svg)](https://dotnet.microsoft.com/download)
-[![Durum](https://img.shields.io/badge/durum-v1.0.0-brightgreen.svg)](../../releases)
+[![Durum](https://img.shields.io/badge/durum-v1.0.0-brightgreen.svg)](https://github.com/payidaramelles-sys/sentinel-av/releases)
+[![build](https://github.com/payidaramelles-sys/sentinel-av/actions/workflows/build.yml/badge.svg)](https://github.com/payidaramelles-sys/sentinel-av/actions/workflows/build.yml)
 
-**[⬇ Son sürümü indir](../../releases/latest)** · İmzasız olduğu için SmartScreen uyarabilir — README'deki
+**[⬇ Son sürümü indir](https://github.com/payidaramelles-sys/sentinel-av/releases/latest)** · İmzasız olduğu için SmartScreen uyarabilir — README'deki
 [Smart App Control](#3-kurulum-paketi-setup-exe) bölümüne bakın.
 
 Windows için **hafif, açık kaynak çekirdekli** bir antivirüs iskeleti. Defender'ın yerine geçmez; onun yanında çalışır:
