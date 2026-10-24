@@ -372,6 +372,8 @@ izin verilir; garanti verilmez.
 ## Katkı
 
 Katkılar memnuniyetle karşılanır — [CONTRIBUTING.md](CONTRIBUTING.md) ile başlayın.
+Katılımın herkes için saygılı olması için [Davranış Kuralları](CODE_OF_CONDUCT.md) geçerlidir.
+Sürüm geçmişi: [CHANGELOG.md](CHANGELOG.md)
 Özellikle **yanlış pozitif raporları** değerlidir: hangi dosya, hangi motor, hangi skor.
 
 ## Güvenlik
